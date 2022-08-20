@@ -1,3 +1,4 @@
+
 :root {
     --brand_style: #2196f3;
     --color_white: #FFFFFF;
@@ -8,6 +9,11 @@
     --background_white: #F5F4Fa;
 }
 
+h1,h2,h3 {
+    margin: 0px;
+}
+
+
 /* --Body-- */
 
 body {
@@ -15,6 +21,8 @@ body {
     color: var(--color_grey);
     background-color: var(--color_white);
     letter-spacing: 0.03em;
+    width: 1600px;
+    height: 80px;
 }
 
 a {
@@ -23,6 +31,7 @@ a {
 
 ul {
     list-style-type: none;
+    padding-inline-start: 0px;
 }
 
 .visually_hidden {
@@ -38,22 +47,30 @@ ul {
     margin: -1px;
 }
 
+
 .container {
-    outline-style: dashed;
-    background-color: purple;
-    width: 1600px;
-    height: 80px;
+    width: 1200px;
+    outline: 2px solid red;
     display: flex;
+    margin-left: auto;
+    margin-right: auto;
     
 }
+
 
 /* --Header-- */
 .header {
     background-color: var(--color_white);
 }
 
-.link_nav {
-display: flex;
+.main_nav{
+    padding: 15px;
+
+    display: flex;
+    align-items: center;
+    
+
+    
 }
 .logohead {
 font-family: 'Raleway';
@@ -63,14 +80,18 @@ font-family: 'Raleway';
     color: var(--color_black);
     text-decoration: none;
     cursor: pointer;
-
+    margin-right: 93px;
 }
 
 .logo_web {
     color: var(--brand_style);
     
 }
-.link_nav_ul  a {
+.link_nav {
+    margin-right: auto;
+}
+
+.link_nav  a {
  
     font-weight: 500;
     font-size: 14px;
@@ -80,9 +101,14 @@ font-family: 'Raleway';
     cursor: pointer;
 }
 
-.link_nav_ul {
-  
+.link_nav_item {
+    margin-right: 50px;
 }
+.link_nav_item:last-child {
+    margin-right: 0px;
+}
+
+
 
 .contact-link {
     font-style: normal;
@@ -92,7 +118,16 @@ font-family: 'Raleway';
     letter-spacing: 0.02em;
     color: var(--color_grey);
     cursor: pointer;
+    
 }
+.adrress_ul li {
+padding-right: 50px;
+}
+
+.adrress_ul li:last-child {
+    padding-right: 0px;
+}
+
 
 .link:hover,
 .link:focus {
@@ -105,15 +140,24 @@ font-family: 'Raleway';
     
 }
 
-.link_nav_ul .link.current {
+.link_nav .link.current {
     color: var(--brand_style);
 }
 
-/* Main section*/
+/* MAIN*/
 
+/* Section #1*/
+
+.section_headline {
+    background: var(--background_grey);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    
+    
+}
 
 .main_headline {
- 
     font-weight: 900;
     font-size: 44px;
     line-height: 1,36;
@@ -121,18 +165,25 @@ font-family: 'Raleway';
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--color_white);
+    padding: 200px 252px 30px 252px;
+
 }
 
-.section_headline {
-    background: var(--background_grey);
+.container_btn {
+    width: 1200px;
+    outline: 2px solid red;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 200px;
+    
 }
 
 .button_headline {
      
         font-weight: 700;
         font-size: 16px;
-        line-height: 1,9;
-        display: flex;
+        line-height: 1,8;
         align-items: center;
         text-align: center;
         letter-spacing: 0.06em;
@@ -141,6 +192,14 @@ font-family: 'Raleway';
         cursor: pointer;
         border: none;
         border-radius: 4px;
+
+        padding: 10px 32px 10px 32px;
+        margin-left: auto;
+        margin-right: auto;
+
+
+        
+        
         
 }
 
@@ -153,6 +212,10 @@ font-family: 'Raleway';
         border: none;
 }
 
+
+
+
+/* Section #2*/
 .our_benefits h3 {
      
     font-weight: 700;
