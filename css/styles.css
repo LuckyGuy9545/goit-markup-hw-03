@@ -514,6 +514,10 @@ margin-right: 8px;
         cursor: pointer;
 }
 
+.contact-link_f:hover,
+.contact-link_f:focus {
+    color: var(--brand_style);
+}
 
 .foot_cont_link {
     font-style: normal;
