@@ -75,10 +75,11 @@ ul {
 
 .header {
     background-color: var(--color_white);
+    border-bottom: 1px solid #ECECEC;
 }
 
 .main_nav{
-    border-bottom: 1px solid #ECECEC;
+    
     display: flex;
     align-items: center;
     margin-right: auto;
@@ -108,7 +109,7 @@ font-family: 'Raleway';
 }
 
 .link_nav  a {
- 
+    display: inline-block; 
     font-weight: 500;
     font-size: 14px;
     line-height: 1.15;
@@ -130,6 +131,7 @@ font-family: 'Raleway';
 
 
 .contact-link {
+    display: inline-block;
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
@@ -269,9 +271,12 @@ margin-right: 50px;
         
 }
 
-.our_benefits li{
+.our_benefits li {
+    width: 270px;
+}
+
+.our_benefits li:not(:last-child){
 margin-right: 30px;
-width: 270px;
 }
 
 
@@ -391,7 +396,7 @@ ul h3 {
 .pf_btn {
 display: flex;
 margin: 0px auto 34px auto;
-width: 575px;
+justify-content: center;
 }
 
 .pf_btn li {
@@ -495,7 +500,7 @@ margin-right: 8px;
     color: var(--brand_style);
 }
 
-.adrress_ul_foot li {
+.adrress_ul_foot li:not(:last-child) {
     margin-bottom: 9px;
     padding: 0;
 }
@@ -517,23 +522,7 @@ margin-right: 8px;
 .contact-link_f:hover,
 .contact-link_f:focus {
     color: var(--brand_style);
-}
-
-.foot_cont_link {
-    font-style: normal;
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 1.16;
-        letter-spacing: 0.02em;
-        color: var(--color_grey);
-        cursor: pointer;
-}
-
-.foot_cont_link:hover,
-.foot_cont_link:focus {
-    color: var(--brand_style);
-}
-
+}   
 
 .footer_main,
 .footer_link {
